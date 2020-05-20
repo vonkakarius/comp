@@ -88,8 +88,10 @@ int main()
 
 void ler_matriz(int A[][MAX], int n)
 {
-    for (int i = 1; i <= n; i++) {
-        for (int j = 1; j <= n; j++) {
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= n; j++)
+        {
             printf("Elemento da linha %d, coluna %d: ", i, j);
             scanf(" %d", &A[i][j]);
         }
@@ -103,7 +105,8 @@ void ler_matriz(int A[][MAX], int n)
 
 void exibir_matriz(int A[][MAX], int n)
 {
-    for (int i = 1; i <= n; i++) {
+    for (int i = 1; i <= n; i++)
+    {
         for (int j = 1; j <= n; j++)
             printf("%d ", A[i][j]);
         printf("\n");
@@ -134,8 +137,10 @@ void multiplicar(int A[][MAX], int B[][MAX], int n)
 {
     int C[MAX][MAX];
     
-    for (int i = 1; i <= n; i++) {
-        for (int j = 1; j <= n; j++) {
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= n; j++)
+        {
             C[i][j] = 0;
             for (int k = 1; k <= n; k++)
                 C[i][j] += A[i][k] * B[k][j];
