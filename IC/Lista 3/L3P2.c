@@ -34,11 +34,11 @@ int main()
     while (1)
     {
         // Mostra o tabuleiro
-        printf("%c|%c|%c\n", t[1][1], t[1][2], t[1][3]);
-        printf("-+-+-\n");
-        printf("%c|%c|%c\n", t[2][1], t[2][2], t[2][3]);
-        printf("-+-+-\n");
-        printf("%c|%c|%c\n\n", t[3][1], t[3][2], t[3][3]);
+        printf(" %c | %c | %c \n", t[1][1], t[1][2], t[1][3]);
+        printf("---+---+---\n");
+        printf(" %c | %c | %c \n", t[2][1], t[2][2], t[2][3]);
+        printf("---+---+---\n");
+        printf(" %c | %c | %c \n\n", t[3][1], t[3][2], t[3][3]);
         
         // Checa situacao
         int situacao = terminou(t);
