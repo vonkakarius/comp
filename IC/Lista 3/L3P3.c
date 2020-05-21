@@ -96,7 +96,7 @@ void exibir(char t[MAX][MAX])
         // Linha
         for (int j = 1; j <= n; j++)
         {
-            printf("%c", t[i][j]);
+            printf(" %c ", t[i][j]);
             if (j < n)
                 printf("|");
         }
@@ -106,8 +106,8 @@ void exibir(char t[MAX][MAX])
         if (i < n)
         {
             for (int k = 1; k < n; k++)
-                printf("-+");
-            printf("-\n");
+                printf("---+");
+            printf("---\n");
         }
     }
     printf("\n");
