@@ -14,8 +14,7 @@ int terminou(char t[4][4]);
 int main()
 {
     // Declaracoes
-    int vencedor = 0, vez = 1;
-    int l, c, valida = 0;
+    int vez = 1, l, c, valida = 0;
     char j[3][30], sinal[3] = {' ', 'O', 'X'};
     char t[4][4];
     
@@ -32,7 +31,7 @@ int main()
     printf("\n");
     
     // E executa o jogo ate acabar
-    while (!vencedor)
+    while (1)
     {
         // Mostra o tabuleiro
         printf("%c|%c|%c\n", t[1][1], t[1][2], t[1][3]);
