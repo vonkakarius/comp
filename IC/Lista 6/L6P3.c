@@ -47,11 +47,13 @@ int main()
 void transformar_minusculas(char *ptr)
 {
     // Pra cada letra
-    for (int i = 0; i < MAX; i++)
+    int i = 0;
+    while (*(ptr + i) != '\0')
     {
         // Se ela e maiuscula, transforma em minuscula
         if (isupper(*(ptr + i)))
             *(ptr + i) = tolower(*(ptr + i));
+        i++;
     }
     
     // Mostra a string transformada
@@ -63,11 +65,13 @@ void transformar_minusculas(char *ptr)
 void transformar_maiusculas(char *ptr)
 {
     // Pra cada letra
-    for (int i = 0; i < MAX; i++)
+    int i = 0;
+    while (*(ptr + i) != '\0')
     {
         // Se ela e minuscula, transforma em maiuscula
         if (islower(*(ptr + i)))
             *(ptr + i) = toupper(*(ptr + i));
+        i++;
     }
     
     // Mostra a string transformada
@@ -78,39 +82,25 @@ void transformar_maiusculas(char *ptr)
 
 void transformar_camelcase(char *ptr)
 {
-    // Inicia um contador de posicao pra saber
-    // onde inserir as letras transformadas
-    int pos = 0;
-    
     // Pra cada letra
-    for (int i = 0; i < MAX; i++)
+    int i = 0;
+    while (*(ptr + i) != '\0')
     {
-        // Se for espaco, pula
+        // Se for espaco, ignora
         if (isspace(*(ptr + i)))
         {
+            i++;
             continue;
         }
-        // Senao, se eh ela e a primeira da string, ou se o
-        // que veio antes dela for um espaco, deixa maiuscula
+        // Se inicia palavra, deixa maiuscula
         else if (i == 0 || isspace(*(ptr + i - 1)))
-        {
-            *(ptr + pos) = toupper(*(ptr + i));
-        }
+            printf("%c", (int) toupper(*(ptr + i)));
         // Senao, deixa minuscula
         else
-        {
-            *(ptr + pos) = tolower(*(ptr + i));
-        }
-        
-        // Atualiza o contador de posicao
-        pos++;
+            printf("%c", (int) tolower(*(ptr + i)));
+        i++;
     }
-    
-    // Coloca o '\0' no final
-    *(ptr + pos) = '\0';
-    
-    // Mostra a string transformada
-    printf("%s\n", ptr);
+    printf("\n");
 }
 
 //----------------------------------------------------------------
