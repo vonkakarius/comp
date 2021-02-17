@@ -4,6 +4,7 @@
 //----------------------------------------------------------------
 
 // MANEIRO, ELE LANÇOU O CONFLITO
+// KKKKKKK BOTEI OUTRO
 
 #include <stdio.h>
 #include <ctype.h>
