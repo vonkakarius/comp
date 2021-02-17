@@ -3,6 +3,8 @@
 // Al Richard
 //----------------------------------------------------------------
 
+// Ora ora, temos aqui um conflito
+
 #include <stdio.h>
 #include <ctype.h>
 #define MAX 51
