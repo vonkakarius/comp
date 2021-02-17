@@ -5,6 +5,10 @@
 
 // MANEIRO, ELE LANÇOU O CONFLITO
 
+
+
+// VISH, MUDEI COISA ONLINE
+
 #include <stdio.h>
 #include <ctype.h>
 #define MAX 51
