@@ -3,6 +3,8 @@
 // Al Richard
 //----------------------------------------------------------------
 
+// KKKKKKKKK ADICIONEI UM COMENTÁRIO PIRADÃO
+
 #include <stdio.h>
 #include <ctype.h>
 #define MAX 51
