@@ -3,7 +3,7 @@
 // Al Richard
 //----------------------------------------------------------------
 
-// Ora ora, temos aqui um conflito
+// MANEIRO, ELE LANÇOU O CONFLITO
 
 #include <stdio.h>
 #include <ctype.h>
